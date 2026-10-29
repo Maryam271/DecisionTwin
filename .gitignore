@@ -1,8 +1,38 @@
-# Python cache files
-__pycache__/
-*.pyc
-
-# Local environment and secrets
-.venv/
+# Python virtual environment
 venv/
+.venv/
+ENV/
+env/
+
+
+# Environment variable files (secrets)
 .env
+.env.*
+!.env.example
+
+# Cache files and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Build and distribution
+dist/
+build/
+*.egg-info/
