@@ -1,0 +1,776 @@
+{
+  "_note": "Sample output in the same shape as run_simulation('supply_chain', ...) from backend/simulation/engine.py, for frontend development only. Synthetic data.",
+  "inputs": {
+    "inventory": 1400,
+    "daily_demand": 100,
+    "selling_price": 50,
+    "emergency_unit_cost": 35,
+    "emergency_quantity": 1000,
+    "emergency_lead_days": 7,
+    "normal_lead_days": 25,
+    "budget": 40000,
+    "horizon_days": 30
+  },
+  "crisis_type": "supply_chain",
+  "mode": "quantitative",
+  "simulation_results": {
+    "emergency_sourcing": {
+      "financial_impact_usd": -40000,
+      "recovery_time_days": 7,
+      "production_capacity_pct": 96.67,
+      "operational_risk_score": 0.27,
+      "lost_units": 100,
+      "emergency_spend_usd": 35000,
+      "stockout_days": 1,
+      "within_budget": true
+    },
+    "wait_for_recovery": {
+      "financial_impact_usd": -55000,
+      "recovery_time_days": 25,
+      "production_capacity_pct": 63.33,
+      "operational_risk_score": 2.93,
+      "lost_units": 1100,
+      "emergency_spend_usd": 0,
+      "stockout_days": 11,
+      "within_budget": true
+    },
+    "split_procurement": {
+      "financial_impact_usd": -47500,
+      "recovery_time_days": 7,
+      "production_capacity_pct": 80,
+      "operational_risk_score": 1.6,
+      "lost_units": 600,
+      "emergency_spend_usd": 17500,
+      "stockout_days": 6,
+      "within_budget": true
+    }
+  },
+  "daily_results": {
+    "emergency_sourcing": [
+      {
+        "day": 1,
+        "opening_inventory": 1400,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1300
+      },
+      {
+        "day": 2,
+        "opening_inventory": 1300,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1200
+      },
+      {
+        "day": 3,
+        "opening_inventory": 1200,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1100
+      },
+      {
+        "day": 4,
+        "opening_inventory": 1100,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1000
+      },
+      {
+        "day": 5,
+        "opening_inventory": 1000,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 900
+      },
+      {
+        "day": 6,
+        "opening_inventory": 900,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 800
+      },
+      {
+        "day": 7,
+        "opening_inventory": 800,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 700
+      },
+      {
+        "day": 8,
+        "opening_inventory": 700,
+        "delivered": 1000,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1600
+      },
+      {
+        "day": 9,
+        "opening_inventory": 1600,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1500
+      },
+      {
+        "day": 10,
+        "opening_inventory": 1500,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1400
+      },
+      {
+        "day": 11,
+        "opening_inventory": 1400,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1300
+      },
+      {
+        "day": 12,
+        "opening_inventory": 1300,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1200
+      },
+      {
+        "day": 13,
+        "opening_inventory": 1200,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1100
+      },
+      {
+        "day": 14,
+        "opening_inventory": 1100,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1000
+      },
+      {
+        "day": 15,
+        "opening_inventory": 1000,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 900
+      },
+      {
+        "day": 16,
+        "opening_inventory": 900,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 800
+      },
+      {
+        "day": 17,
+        "opening_inventory": 800,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 700
+      },
+      {
+        "day": 18,
+        "opening_inventory": 700,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 600
+      },
+      {
+        "day": 19,
+        "opening_inventory": 600,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 500
+      },
+      {
+        "day": 20,
+        "opening_inventory": 500,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 400
+      },
+      {
+        "day": 21,
+        "opening_inventory": 400,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 300
+      },
+      {
+        "day": 22,
+        "opening_inventory": 300,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 200
+      },
+      {
+        "day": 23,
+        "opening_inventory": 200,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 100
+      },
+      {
+        "day": 24,
+        "opening_inventory": 100,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 0
+      },
+      {
+        "day": 25,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 26,
+        "opening_inventory": 0,
+        "delivered": 3000,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2900
+      },
+      {
+        "day": 27,
+        "opening_inventory": 2900,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2800
+      },
+      {
+        "day": 28,
+        "opening_inventory": 2800,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2700
+      },
+      {
+        "day": 29,
+        "opening_inventory": 2700,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2600
+      },
+      {
+        "day": 30,
+        "opening_inventory": 2600,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2500
+      }
+    ],
+    "wait_for_recovery": [
+      {
+        "day": 1,
+        "opening_inventory": 1400,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1300
+      },
+      {
+        "day": 2,
+        "opening_inventory": 1300,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1200
+      },
+      {
+        "day": 3,
+        "opening_inventory": 1200,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1100
+      },
+      {
+        "day": 4,
+        "opening_inventory": 1100,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1000
+      },
+      {
+        "day": 5,
+        "opening_inventory": 1000,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 900
+      },
+      {
+        "day": 6,
+        "opening_inventory": 900,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 800
+      },
+      {
+        "day": 7,
+        "opening_inventory": 800,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 700
+      },
+      {
+        "day": 8,
+        "opening_inventory": 700,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 600
+      },
+      {
+        "day": 9,
+        "opening_inventory": 600,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 500
+      },
+      {
+        "day": 10,
+        "opening_inventory": 500,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 400
+      },
+      {
+        "day": 11,
+        "opening_inventory": 400,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 300
+      },
+      {
+        "day": 12,
+        "opening_inventory": 300,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 200
+      },
+      {
+        "day": 13,
+        "opening_inventory": 200,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 100
+      },
+      {
+        "day": 14,
+        "opening_inventory": 100,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 0
+      },
+      {
+        "day": 15,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 16,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 17,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 18,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 19,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 20,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 21,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 22,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 23,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 24,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 25,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 26,
+        "opening_inventory": 0,
+        "delivered": 3000,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2900
+      },
+      {
+        "day": 27,
+        "opening_inventory": 2900,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2800
+      },
+      {
+        "day": 28,
+        "opening_inventory": 2800,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2700
+      },
+      {
+        "day": 29,
+        "opening_inventory": 2700,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2600
+      },
+      {
+        "day": 30,
+        "opening_inventory": 2600,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2500
+      }
+    ],
+    "split_procurement": [
+      {
+        "day": 1,
+        "opening_inventory": 1400,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1300
+      },
+      {
+        "day": 2,
+        "opening_inventory": 1300,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1200
+      },
+      {
+        "day": 3,
+        "opening_inventory": 1200,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1100
+      },
+      {
+        "day": 4,
+        "opening_inventory": 1100,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1000
+      },
+      {
+        "day": 5,
+        "opening_inventory": 1000,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 900
+      },
+      {
+        "day": 6,
+        "opening_inventory": 900,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 800
+      },
+      {
+        "day": 7,
+        "opening_inventory": 800,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 700
+      },
+      {
+        "day": 8,
+        "opening_inventory": 700,
+        "delivered": 500,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1100
+      },
+      {
+        "day": 9,
+        "opening_inventory": 1100,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 1000
+      },
+      {
+        "day": 10,
+        "opening_inventory": 1000,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 900
+      },
+      {
+        "day": 11,
+        "opening_inventory": 900,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 800
+      },
+      {
+        "day": 12,
+        "opening_inventory": 800,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 700
+      },
+      {
+        "day": 13,
+        "opening_inventory": 700,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 600
+      },
+      {
+        "day": 14,
+        "opening_inventory": 600,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 500
+      },
+      {
+        "day": 15,
+        "opening_inventory": 500,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 400
+      },
+      {
+        "day": 16,
+        "opening_inventory": 400,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 300
+      },
+      {
+        "day": 17,
+        "opening_inventory": 300,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 200
+      },
+      {
+        "day": 18,
+        "opening_inventory": 200,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 100
+      },
+      {
+        "day": 19,
+        "opening_inventory": 100,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 0
+      },
+      {
+        "day": 20,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 21,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 22,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 23,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 24,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 25,
+        "opening_inventory": 0,
+        "delivered": 0,
+        "demand_served": 0,
+        "unmet_demand": 100,
+        "ending_inventory": 0
+      },
+      {
+        "day": 26,
+        "opening_inventory": 0,
+        "delivered": 3000,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2900
+      },
+      {
+        "day": 27,
+        "opening_inventory": 2900,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2800
+      },
+      {
+        "day": 28,
+        "opening_inventory": 2800,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2700
+      },
+      {
+        "day": 29,
+        "opening_inventory": 2700,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2600
+      },
+      {
+        "day": 30,
+        "opening_inventory": 2600,
+        "delivered": 0,
+        "demand_served": 100,
+        "unmet_demand": 0,
+        "ending_inventory": 2500
+      }
+    ]
+  }
+}
